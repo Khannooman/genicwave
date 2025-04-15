@@ -1,0 +1,279 @@
+{
+  "siteMeta": {
+    "title": "GenicWave - Innovative IT Solutions",
+    "description": "GenicWave delivers top-tier IT services like Cloud, Cybersecurity, Custom Software & Consulting to drive your business forward.",
+    "favicon": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/favicon.ico",
+    "ogImage": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/og-image.png"
+  },
+  "navbar": {
+    "logoAlt": "Logo",
+    "appLogoUrl": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave_logo.png",
+    "links": [
+      { "name": "Home", "path": "/" },
+      { "name": "About", "path": "/about" },
+      { "name": "Services", "path": "/services" },
+      { "name": "Portfolio", "path": "/portfolio" },
+      { "name": "Blog", "path": "/blog" },
+      { "name": "Careers", "path": "/careers" },
+      { "name": "Contact", "path": "/contact" }
+    ]
+  },
+  "hero": {
+    "title": "Welcome to GenicWave",
+    "subtitle": "Innovative IT Solutions for a Digital World",
+    "buttonText": "Get Started",
+    "imageUrl": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/image9.jpg"
+  },
+  "footer": {
+    "companyName": "GenicWave",
+    "tagline": "Innovate. Transform. Succeed.",
+    "socialLinks": [
+      { "name": "Facebook", "url": "https://facebook.com/genicwave", "icon": "fa-brands fa-facebook" },
+      { "name": "Twitter", "url": "https://twitter.com/genicwave", "icon": "fa-brands fa-twitter" },
+      { "name": "Instagram", "url": "https://instagram.com/genicwave", "icon": "fa-brands fa-instagram" },
+      { "name": "LinkedIn", "url": "https://linkedin.com/company/genicwave", "icon": "fa-brands fa-linkedin" },
+      { "name": "YouTube", "url": "https://youtube.com/genicwave", "icon": "fa-brands fa-youtube" },
+      { "name": "Snapchat", "url": "https://snapchat.com/add/genicwave", "icon": "fa-brands fa-snapchat" },
+      { "name": "Slack", "url": "https://genicwave.slack.com", "icon": "fa-brands fa-slack" }
+    ],
+    "contactEmail": ["genicwave@gmail.com", "genicwave@outlook.com"],
+    "address": "Mumbai, Maharashtra - (421302), India",
+    "phone": "+91 998 711 9862, +91 775 784 8985", 
+    "copyright": "© 2025 GenicWave. All rights reserved."
+  },
+  "home": {
+    "heroTitle": "Empowering Your Future with Innovative IT Solutions",
+    "heroSubtitle": "GenicWave delivers cutting-edge technology to transform your business.",
+    "heroButton": "Get Started",
+    "servicesTitle": "Our Services",
+    "servicesSubtitle": "Explore our comprehensive IT solutions tailored to your needs.",
+    "testimonialsTitle": "Transforming Buisness",
+    "services": [
+      { "title": "Cloud Solutions", "description": "Scalable and secure cloud infrastructure for your business.", "icon": "fa-solid fa-cloud" },
+      { "title": "Cybersecurity", "description": "Protect your data with our advanced security measures.", "icon": "fa-solid fa-shield-alt" },
+      { "title": "Custom Software", "description": "Bespoke software tailored to your unique requirements.", "icon": "fa-solid fa-code" }
+    ],
+    "testimonials": [
+      { "quote": "GenicWave transformed our operations with their innovative solutions.", "author": "Jane Doe", "company": "TechCorp" },
+      { "quote": "Their team delivered beyond our expectations!", "author": "John Smith", "company": "GrowEasy" }
+    ]
+  },
+  "about": {
+    "heroTitle": "About GenicWave",
+    "heroSubtitle": "Transforming businesses with AI and cutting-edge technology since 2022.",
+    "imageUrl": "/images/hero.jpg",
+    "AboutTitle": "Who We Are",
+    "AboutSubtitle": "Pioneering IT solutions with a passion for innovation.",
+    "AboutText": "Founded in 2022, GenicWave is a dynamic and innovative digital transformation and AI company dedicated to empowering industries worldwide to revolutionize their businesses. With a strong focus on cutting-edge artificial intelligence, we specialize in delivering intelligent, scalable, and future-ready solutions that drive efficiency, innovation, and growth.",
+    "missionTitle": "Our Mission",
+    "missionText": "To empower businesses globally by harnessing AI and transformative technology to drive growth, efficiency, and innovation.",
+    "missionImage": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/Mission Image.jpeg",
+    "visionTitle": "Our Vision",
+    "visionText": "To lead the world in delivering pioneering IT solutions, creating a future where technology seamlessly unlocks boundless opportunities for all.",
+    "vissionImage": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/image6.jpg",
+    "teamTitle": "Our Team",
+    "teamSubtitle": "Meet the innovators behind GenicWave’s success.",
+    "teamMembers": [
+      {
+        "name": "Khursheed Gaddi",
+        "role": "CEO",
+        "bio": "Visionary leader with over 4 years in tech innovation.",
+        "icon": "fa-solid fa-user-tie",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/khursheed.jpg"
+      },
+      {
+        "name": "Nooman Khan",
+        "role": "CTO",
+        "bio": "Data Scinetist & ML Engineer. \n\nBuildin Enterprise AI and Data Solutions",
+        "icon": "fa-solid fa-laptop-code",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/Nooman.jpg"
+      },
+      {
+        "name": "Vaid Mansuri",
+        "role": "Senior Developer",
+        "bio": ".NET Expert with a knack for problem-solving. \n\nPassionate about coding and technology.",
+        "icon": "fa-solid fa-laptop-code",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/vahid.jpg"
+      },
+      {
+        "name": "Kamal Joshi",
+        "role": "Full Stack & AI Developer",
+        "bio": "Full Stack Developer with a focus on AI solutions. \n\nBringing ideas to life through technology.",
+        "icon": "fa-solid fa-laptop-code",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/kamal.jpg"
+      },
+      {
+        "name": "Soheb Shaikh",
+        "role": "DevOps Engineer",
+        "bio": "Cloud enthusiast with a focus on automation and efficiency. \n\nBringing DevOps practices to life.",
+        "icon": "fa-solid fa-laptop-code",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/soheb.jpg"
+      }
+    ]
+  },
+  "services": {
+    "heroTitle": "Our Services",
+    "heroSubtitle": "Comprehensive IT solutions tailored to your business needs.",
+    "servicesTitle": "What We Offer",
+    "servicesSubtitle": "Discover how we can help your business thrive.",
+    "servicesList": [
+      { 
+        "title": "Cloud Computing", 
+        "description": "Leverage scalable cloud infrastructure to boost efficiency and reduce costs.", 
+        "icon": "faCloud"
+      },
+      { 
+        "title": "Cybersecurity Solutions", 
+        "description": "Protect your business with our advanced security protocols and monitoring.", 
+        "icon": "faShieldAlt"
+      },
+      { 
+        "title": "Software Development", 
+        "description": "Custom-built applications designed to meet your unique requirements.", 
+        "icon": "faCode"
+      },
+      { 
+        "title": "IT Consulting", 
+        "description": "Expert guidance to align your IT strategy with business goals.", 
+        "icon": "faChartLine"
+      },
+      {
+        "title": "DevOps Services",
+        "description": "Streamline your development and operations with automated workflows.",
+        "icon": "faGears"
+      },
+      {
+        "title": "AI & Machine Learning",
+        "description": "Harness the power of AI to drive intelligent business solutions.",
+        "icon": "faBrain"
+      },
+      {
+        "title": "Data Analytics",
+        "description": "Transform your data into actionable insights for better decisions.",
+        "icon": "faChartPie"
+      },
+      {
+        "title": "Mobile App Development",
+        "description": "Create powerful mobile experiences for iOS and Android platforms.",
+        "icon": "faMobile"
+      }
+    ]
+  },
+  "form": {
+    "contactTitle": "Get in Touch",
+    "contactSubtitle": "We'd love to hear from you! Fill out the form below.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Enter your name",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us about your project",
+    "submitButton": "Send Message",
+    "successMessage": "Thank you! We'll get back to you soon.",
+    "errorMessage": "Something went wrong. Please try again."
+  },
+  "contact": {
+    "heroTitle": "Contact Us",
+    "heroSubtitle": "Ready to transform your business? Reach out today!"
+  },
+  "portfolio": {
+    "heroTitle": "Our Portfolio",
+    "heroSubtitle": "Discover our innovative solutions and success stories",
+    "projectsTitle": "Featured Projects",
+    "projectsSubtitle": "Explore our latest work and achievements",
+    "projects": [
+      {
+        "title": "E-Commerce Platform",
+        "description": "A scalable online store with AI-powered recommendations and seamless payment integration.",
+        "icon": "fa-solid fa-shopping-cart",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/project.jpg",
+        "githubRepo": "https://github.com/khursheed33/ecommerce-platform"
+      },
+      {
+        "title": "Healthcare App",
+        "description": "Telemedicine platform with real-time consultations and secure patient records.",
+        "icon": "fa-solid fa-heartbeat",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/project.jpg",
+        "githubRepo": "https://github.com/khursheed33/healthcare-app"
+      },
+      {
+        "title": "FinTech Dashboard",
+        "description": "Real-time financial analytics with predictive modeling and interactive visualizations.",
+        "icon": "fa-solid fa-chart-bar",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/project.jpg",
+        "githubRepo": "https://github.com/khursheed33/fintech-dashboard"
+      },
+      {
+        "title": "Smart City Platform",
+        "description": "IoT-based urban management system for efficient city operations.",
+        "icon": "fa-solid fa-globe",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/project.jpg",
+        "githubRepo": "https://github.com/khursheed33/smart-city"
+      },
+      {
+        "title": "AI Assistant",
+        "description": "Natural language processing bot for customer service automation.",
+        "icon": "fa-solid fa-robot",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/project.jpg",
+        "githubRepo": "https://github.com/khursheed33/ai-assistant"
+      },
+      {
+        "title": "Fitness Tracker",
+        "description": "Cross-platform mobile app for health and workout tracking.",
+        "icon": "fa-solid fa-mobile-alt",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/project.jpg",
+        "githubRepo": "https://github.com/khursheed33/fitness-tracker"
+      }
+    ]
+  },
+  "blogLayout": {
+    "readMore": "Read More"
+  },
+  "blog": {
+    "heroTitle": "Our Blog",
+    "heroSubtitle": "Insights, tips, and updates from the GenicWave team.",
+    "postsTitle": "Recent Posts",
+    "postsSubtitle": "Stay informed with our latest articles.",
+    "posts": [
+      {
+        "title": "The Future of Cloud Computing",
+        "excerpt": "Explore how cloud technology is shaping the next decade.",
+        "date": "April 5, 2025",
+        "slug": "future-of-cloud-computing",
+        "author": "Alice Johnson",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/blog/cloud-future.jpg",
+        "githubLink": "https://github.com/khursheed33/blogs/future-of-cloud-computing.md"
+      },
+      {
+        "title": "Top 5 Cybersecurity Trends",
+        "excerpt": "Stay ahead of threats with these emerging trends.",
+        "date": "March 28, 2025",
+        "slug": "cybersecurity-trends",
+        "author": "Bob Carter",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/blog/cyber-trends.jpg",
+        "githubLink": "https://github.com/khursheed33/blogs/cybersecurity-trends.md"
+      }
+    ]
+  },
+  "careers": {
+    "heroTitle": "Join Our Team",
+    "heroSubtitle": "Be part of a dynamic team driving innovation.",
+    "jobsTitle": "Open Positions",
+    "jobsSubtitle": "Find the perfect role to grow your career.",
+    "jobs": [
+      {
+        "title": "Senior Software Engineer",
+        "description": "Lead development of cutting-edge applications.",
+        "icon": "fa-solid fa-laptop-code",
+        "applyLink": "mailto:careers@genicwave.com?subject=Application%20for%20Senior%20Software%20Engineer"
+      },
+      {
+        "title": "Cloud Architect",
+        "description": "Design scalable cloud solutions for our clients.",
+        "icon": "fa-solid fa-cloud",
+        "applyLink": "mailto:careers@genicwave.com?subject=Application%20for%20Cloud%20Architect"
+      }
+    ],
+    "applyButton": "Apply Now"
+  }
+}
