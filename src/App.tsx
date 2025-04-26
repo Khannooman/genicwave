@@ -6,6 +6,10 @@ import routes from './routes';
 
 const App: React.FC = () => {
   return (
+  <div>
+    <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    </head>
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <Navbar />
       <main className="flex-grow">
@@ -21,6 +25,7 @@ const App: React.FC = () => {
       </main>
       <Footer />
     </div>
+  </div>
   );
 };
 

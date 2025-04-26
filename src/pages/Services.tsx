@@ -14,6 +14,8 @@ import {
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import SectionHeader from '../components/SectionHeader';
 import text from '../config/text.json';
+import { Link } from 'react-router-dom';
+// import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 // Create an icon mapping object with proper typing
 const iconMapping: { [key: string]: IconDefinition } = {
@@ -111,9 +113,14 @@ const Services: React.FC = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-50 transition-colors duration-300"
+            // className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-50 transition-colors duration-300"
           >
-            Contact Us Today
+            <Link
+              to="/contact"
+              className="inline-flex justify-center items-center bg-white text-blue-600 py-2 px-4 rounded-full text-sm font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              Contact Us
+            </Link>
           </motion.button>
         </div>
       </section>

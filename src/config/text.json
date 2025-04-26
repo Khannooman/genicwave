@@ -21,7 +21,8 @@
   "hero": {
     "title": "Welcome to GenicWave",
     "subtitle": "Innovative IT Solutions for a Digital World",
-    "buttonText": "Get Started",
+    "buttonText": "Get in Touch",
+    "buttonText2": "Explore Services",
     "imageUrl": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/image9.jpg"
   },
   "footer": {
@@ -43,10 +44,11 @@
   },
   "home": {
     "heroTitle": "Empowering Your Future with Innovative IT Solutions",
-    "heroSubtitle": "GenicWave delivers cutting-edge technology to transform your business.",
-    "heroButton": "Get Started",
+    "heroSubtitle": "From intelligent automation to deep learning innovations, GenicWave empowers businesses and individuals by crafting next-generation AI solutions tailored to meet the dynamic and ever-evolving needs of the modern world",
+    "heroButton": "Get in Touch",
+    "heroButton2": "Explore Services",
     "servicesTitle": "Our Services",
-    "servicesSubtitle": "Explore our comprehensive IT solutions tailored to your needs.",
+    "servicesSubtitle": "Unlock the future with services powered by next-gen AI, designed to accelerate innovation, efficiency, and growth across every industry.",
     "testimonialsTitle": "Transforming Buisness",
     "services": [
       { "title": "Cloud Solutions", "description": "Scalable and secure cloud infrastructure for your business.", "icon": "fa-solid fa-cloud" },
