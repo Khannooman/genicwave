@@ -22,7 +22,8 @@
     "title": "Welcome to GenicWave",
     "subtitle": "Innovative IT Solutions for a Digital World",
     "buttonText": "Get in Touch",
-    "buttonText2": "Explore Services",
+    "buttonText2": "Explore Solutions",
+    "buttonText3": "Explore Services",
     "imageUrl": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/image9.jpg"
   },
   "footer": {
@@ -49,6 +50,8 @@
     "heroButton2": "Explore Services",
     "servicesTitle": "Our Services",
     "servicesSubtitle": "Unlock the future with services powered by next-gen AI, designed to accelerate innovation, efficiency, and growth across every industry.",
+    "servicesClosingText": "And many more...",
+    "servicesHook": "- Our Most Popular Services -",
     "testimonialsTitle": "Transforming Buisness",
     "services": [
       { "title": "Cloud Solutions", "description": "Scalable and secure cloud infrastructure for your business.", "icon": "fa-solid fa-cloud" },
@@ -56,8 +59,30 @@
       { "title": "Custom Software", "description": "Bespoke software tailored to your unique requirements.", "icon": "fa-solid fa-code" }
     ],
     "testimonials": [
-      { "quote": "GenicWave transformed our operations with their innovative solutions.", "author": "Jane Doe", "company": "TechCorp" },
-      { "quote": "Their team delivered beyond our expectations!", "author": "John Smith", "company": "GrowEasy" }
+      { "quote": "GenicWave transformed our operations with their innovative solutions.", 
+        "author": "Jane Doe", 
+        "company": "TechCorp" 
+      },
+      { "quote": "Their team delivered beyond our expectations!", 
+        "author": "John Smith", 
+        "company": "GrowEasy" 
+      },
+      { "quote": "Exceptional service and support throughout our project.", 
+        "author": "Alice Johnson", 
+        "company": "HealthPlus" 
+      },
+      { "quote": "GenicWave's expertise in AI is unmatched.", 
+        "author": "Bob Carter", 
+        "company": "FinTech Innovations" 
+      },
+      { "quote": "A game-changer for our business!", 
+        "author": "Charlie Brown", 
+        "company": "RetailMax" 
+      },
+      { "quote": "Their solutions are innovative and effective.", 
+        "author": "Diana Prince", 
+        "company": "EcomWorld" 
+      }
     ]
   },
   "about": {
@@ -114,50 +139,60 @@
     ]
   },
   "services": {
-    "heroTitle": "Our Services",
+    "heroSemiTitle": "Our",
+    "heroTitle": "Services",
     "heroSubtitle": "Comprehensive IT solutions tailored to your business needs.",
     "servicesTitle": "What We Offer",
     "servicesSubtitle": "Discover how we can help your business thrive.",
+    "servicesButton": "Get Quotation",
     "servicesList": [
       { 
         "title": "Cloud Computing", 
         "description": "Leverage scalable cloud infrastructure to boost efficiency and reduce costs.", 
-        "icon": "faCloud"
+        "icon": "faCloud",
+        "isFeatured": false
       },
       { 
         "title": "Cybersecurity Solutions", 
         "description": "Protect your business with our advanced security protocols and monitoring.", 
-        "icon": "faShieldAlt"
+        "icon": "faShieldAlt",
+        "isFeatured": false
       },
       { 
         "title": "Software Development", 
         "description": "Custom-built applications designed to meet your unique requirements.", 
-        "icon": "faCode"
+        "icon": "faCode",
+        "isFeatured": true
       },
       { 
         "title": "IT Consulting", 
         "description": "Expert guidance to align your IT strategy with business goals.", 
-        "icon": "faChartLine"
+        "icon": "faChartLine",
+        "isFeatured": true
       },
       {
         "title": "DevOps Services",
         "description": "Streamline your development and operations with automated workflows.",
-        "icon": "faGears"
+        "icon": "faGears",
+        "isFeatured": false
       },
       {
         "title": "AI & Machine Learning",
         "description": "Harness the power of AI to drive intelligent business solutions.",
-        "icon": "faBrain"
+        "icon": "faBrain",
+        "isFeatured": true
       },
       {
         "title": "Data Analytics",
         "description": "Transform your data into actionable insights for better decisions.",
-        "icon": "faChartPie"
+        "icon": "faChartPie",
+        "isFeatured": true
       },
       {
         "title": "Mobile App Development",
         "description": "Create powerful mobile experiences for iOS and Android platforms.",
-        "icon": "faMobile"
+        "icon": "faMobile",
+        "isFeatured": false
       }
     ]
   },
@@ -176,11 +211,13 @@
   },
   "contact": {
     "heroTitle": "Contact Us",
-    "heroSubtitle": "Ready to transform your business? Reach out today!"
+    "heroSubtitle": "Ready to transform your business? Reach out today!",
+    "contactSubtitle2": "Email, call or complete the form to help us solve your query and help you become more skilled version of yourself!"
   },
   "portfolio": {
-    "heroTitle": "Our Portfolio",
-    "heroSubtitle": "Discover our innovative solutions and success stories",
+    "heroSemiTitle": "Our",
+    "heroTitle": "Portfolio",
+    "heroSubtitle": "Discover our innovative solutions and success stories through our latest projects and achievements.",
     "projectsTitle": "Featured Projects",
     "projectsSubtitle": "Explore our latest work and achievements",
     "projects": [
@@ -232,8 +269,9 @@
     "readMore": "Read More"
   },
   "blog": {
-    "heroTitle": "Our Blog",
-    "heroSubtitle": "Insights, tips, and updates from the GenicWave team.",
+    "heroSemiTitle": "Our",
+    "heroTitle": "Blog",
+    "heroSubtitle": "Stay informed with insights, tips, and updates from the GenicWave team through our latest articles.",
     "postsTitle": "Recent Posts",
     "postsSubtitle": "Stay informed with our latest articles.",
     "posts": [
@@ -258,21 +296,23 @@
     ]
   },
   "careers": {
-    "heroTitle": "Join Our Team",
-    "heroSubtitle": "Be part of a dynamic team driving innovation.",
+    "heroSemiTitle": "Join Our",
+    "heroTitle": "Team",
+    "heroSubtitle": "Be part of a dynamic team shaping the future. Discover exciting career opportunities and find the perfect role to grow with us.",
     "jobsTitle": "Open Positions",
     "jobsSubtitle": "Find the perfect role to grow your career.",
+    "jobsTag": "Current Openings",
     "jobs": [
       {
         "title": "Senior Software Engineer",
         "description": "Lead development of cutting-edge applications.",
-        "icon": "fa-solid fa-laptop-code",
+        "icon": "faLaptopCode",
         "applyLink": "mailto:careers@genicwave.com?subject=Application%20for%20Senior%20Software%20Engineer"
       },
       {
         "title": "Cloud Architect",
         "description": "Design scalable cloud solutions for our clients.",
-        "icon": "fa-solid fa-cloud",
+        "icon": "faCloud",
         "applyLink": "mailto:careers@genicwave.com?subject=Application%20for%20Cloud%20Architect"
       }
     ],

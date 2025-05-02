@@ -21,18 +21,18 @@ const Navbar: React.FC = () => {
               className="w-full h-full object-cover rounded-full"
             />
           </div>
-          <span>Genic<span className="text-red-500">W</span>ave</span>
+          <span>Genic<span className="text-blue-500">Wave</span></span>
         </NavLink>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden lg:flex space-x-2">
           {text.navbar.links.map((link) => (
             <NavLink
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
-                `hover:text-blue-400 transition-colors ${
-                  isActive ? 'text-blue-400 font-semibold' : ''
+                `hover:bg-blue-500 rounded-full hover:text-white font-medium  px-4 py-1 transition-colors ${
+                  isActive ? 'bg-blue-600 rounded-full text-white font-medium px-4 py-1 ' : ''
                 }`
               }
             >
@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden focus:outline-none"
+          className="lg:hidden focus:outline-none"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-gray-800 py-4">
+        <div className="lg:hidden bg-gray-800 py-4">
           <div className="container mx-auto px-4 flex flex-col space-y-4">
             {text.navbar.links.map((link) => (
               <NavLink

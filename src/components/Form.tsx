@@ -30,7 +30,7 @@ const Form: React.FC = () => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-8 max-w-lg mx-auto">
+    <div className="bg-white rounded-xl shadow-2xl p-8 max-w-xl mx-auto border-2 border-gray-100">
       <h3 className="text-2xl font-bold text-gray-800 mb-4">
         {text.form.contactTitle}
       </h3>
@@ -91,7 +91,7 @@ const Form: React.FC = () => {
         </div>
         <button
           type="submit"
-          className="w-full bg-primary text-white py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center"
+          className="w-full bg-blue-600 text-white py-3 rounded-full hover:bg-blue-700 transition-colors flex items-center justify-center"
         >
           {text.form.submitButton}
           <FontAwesomeIcon icon={faPaperPlane} className="ml-2" />

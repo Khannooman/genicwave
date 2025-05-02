@@ -7,6 +7,19 @@ import Card from '../components/Card';
 import Testimonial from '../components/Testimonial';
 import text from '../config/text.json';
 import TeamAvatars from '../components/TeamAvatarts';
+import TestimonialCarousel from '../components/TestimonialCaraousel';
+import { 
+  faCloud, 
+  faShieldAlt, 
+  faCode, 
+  faChartLine,
+  faGears,
+  faBrain,
+  faChartPie,
+  faMobile
+} from '@fortawesome/free-solid-svg-icons';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import SectionHeader from '../components/SectionHeader';
 // import DotBackground from '../components/DotBackground';
 
 
@@ -68,6 +81,17 @@ const NumberStat = ({ value, label }: { value: number, label: string }) => {
   );
 };
 
+const iconMapping: { [key: string]: IconDefinition } = {
+  'faCloud': faCloud,
+  'faShieldAlt': faShieldAlt,
+  'faCode': faCode,
+  'faChartLine': faChartLine,
+  'faGears': faGears,
+  'faBrain': faBrain,
+  'faChartPie': faChartPie,
+  'faMobile': faMobile
+};
+
 const Home: React.FC = () => {
   const [typedText, setTypedText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
@@ -97,10 +121,12 @@ const Home: React.FC = () => {
   const items = [
     { label: "Artificial Intelligence", img: "images/ai.png", delay: 0.1 },
     { label: "Machine Learning", img: "images/ml.png", delay: 0.2 },
-    { label: "Deep Learning", img: "images/dl.png", delay: 0.4 },
-    { label: "GenAI", img: "images/genai.png", delay: 0.5 },
-    { label: "Natural Language Processing", img: "images/nlp.png", delay: 0.7 },
-    { label: "Computer Vision", img: "images/cv.png", delay: 0.8 },
+    { label: "Custom Neural Training", img: "images/nn.png", delay: 0.4 },
+    { label: "Smart ChatBots", img: "images/genai.png", delay: 0.5 },
+    { label: "RAG System", img: "images/rag.png", delay: 0.7 },
+    { label: "Web Development", img: "images/web.png", delay: 0.8 },
+    { label: "App Development", img: "images/app.png", delay: 1.0 },
+    { label: "Business Analytics", img: "images/da.png", delay: 1.1 },
   ];
 
   const tooltipVariants = {
@@ -118,23 +144,24 @@ const Home: React.FC = () => {
     throw new Error('Function not implemented.');
   }
 
+
+  
+
   return (
     
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-gray-50">
+      {/* New Hero */}
+      <section className="relative bg-gray-50 h-fit flex flex-col items-center pb-20">
       
-      <section
-        className="relative bg-white h-fit flex flex-col items-center"
-      >
-      
-      {/* <div className="absolute inset-0 [background-size:20px_20px] [background-image:radial-gradient(#bebebe_1px,transparent_1px)]"/>
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_1%,black)]"></div> */}
+        {/* <div className="absolute inset-0 [background-size:20px_20px] [background-image:radial-gradient(#bebebe_1px,transparent_1px)]"/>
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_1%,black)]"></div> */}
         
-        <div className="container mx-auto px-4 text-center relative z-10 mt-28 py-12">
+        <div className="container mx-auto px-4 text-center relative z-10 mt-12 md:mt-28 py-12">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-gray-900 text-4xl md:text-5xl font-extrabold mb-6 leading-tight tracking-tight"
+            className="text-gray-900 text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight tracking-tight"
           >
           Custom <span className='text-blue-600'>AI Solutions</span> for Every Industry
           </motion.h2>
@@ -151,13 +178,13 @@ const Home: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
-            >
-              <Link
-                to="/services"
-                className="w-36 sm:w-40 inline-flex justify-center items-center bg-blue-600 text-white py-2 px-2 rounded-full text-xs sm:text-sm font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                {text.home.heroButton2}
-                <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
+              <Link
+                to="/portfolio"
+                className="w-44 inline-flex justify-center items-center bg-blue-600 text-white py-2 px-4 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                {text.hero.buttonText2}
+                <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
               </Link>
             </motion.div>
             <motion.div
@@ -167,10 +194,10 @@ const Home: React.FC = () => {
             >
               <Link
                 to="/contact"
-                className="w-36 sm:w-40 inline-flex justify-center items-center bg-gray-800 text-white py-2 px-2 rounded-full text-xs sm:text-sm font-semibold hover:bg-gray-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="w-44 inline-flex justify-center items-center bg-gray-800 text-white py-2 px-4 rounded-full text-sm font-semibold hover:bg-gray-700 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 {text.home.heroButton}
-                <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
+                <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
               </Link>
             </motion.div>
           </div>
@@ -178,50 +205,142 @@ const Home: React.FC = () => {
         </div>
 
         
-        <div className="grid grid-rows-2 grid-cols-3 sm:grid-rows-1 sm:grid-cols-6 max-w-5xl sm:mx-16 lg:mx-48 mt-8 sm:mt-12">
-  {items.map((item, index) => (
-    <div
-      key={index}
-      className="relative flex flex-col items-center group w-[80px] sm:w-[120px] md:w-[160px] lg:w-[200px]"
-      onMouseEnter={() => setHoveredIndex(index)}
-      onMouseLeave={() => setHoveredIndex(null)}
-    >
-      {/* Tooltip */}
-      <motion.div
-        variants={tooltipVariants}
-        initial="initial"
-        animate={hoveredIndex === index ? "hover" : "initial"}
-        className="flex justify-center items-center -translate-y-2 z-20 bg-gray-800 rounded-full px-2 sm:px-4 py-1 sm:py-2 pointer-events-none"
-      >
-        <p className="text-white text-[10px] sm:text-xs font-bold whitespace-nowrap text-center">
-          {item.label}
-        </p>
-      </motion.div>
+        <div className="grid grid-rows-2 grid-cols-4 sm:grid-rows-1 sm:grid-cols-8 max-w-6xl sm:mx-16 lg:mx-48 mt-8 md:mt-10 items-center justify-items-center">
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className="relative flex flex-col justify-center items-center group w-[80px] sm:w-[120px] md:w-[160px] lg:w-[200px]"
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              {/* Tooltip */}
+              <motion.div
+                variants={tooltipVariants}
+                initial="initial"
+                animate={hoveredIndex === index ? "hover" : "initial"}
+                className="flex justify-center items-center -translate-y-2 z-20 bg-gray-800 rounded-full px-2 sm:px-4 py-1 sm:py-2 pointer-events-none"
+              >
+                <p className="text-white text-[10px] sm:text-xs font-bold whitespace-nowrap text-center">
+                  {item.label}
+                </p>
+              </motion.div>
 
-      {/* Image */}
-      <motion.div
-        variants={imageVariants}
-        initial="initial"
-        animate={hoveredIndex === index ? "hover" : "initial"}
-        className="z-10 w-[120px] md:w-[200px]"
-      >
-        <motion.img
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: item.delay }}
-          src={item.img}
-          alt={item.label}
-          className="h-auto object-contain w-full"
-        />
-      </motion.div>
-    </div>
-  ))}
-</div>
-
-
-
-
+              {/* Image */}
+              <motion.div
+                variants={imageVariants}
+                initial="initial"
+                animate={hoveredIndex === index ? "hover" : "initial"}
+                className="z-10 w-[120px] md:w-[200px]"
+              >
+                <motion.img
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: item.delay }}
+                  src={item.img}
+                  alt={item.label}
+                  className="h-auto object-contain w-full flex justify-center items-center"
+                />
+              </motion.div>
+            </div>
+          ))}
+        </div>
       </section>
+
+      {/*Count of Projects*/}
+      <section className="py-24 bg-gray-50">
+        <div className="container mx-auto px-6 text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-4xl font-extrabold text-gray-900 mb-12"
+          >
+            Our <span className='text-blue-600'>Growth</span>, Proven by Numbers
+          </motion.h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-12 sm:gap-y-0 max-w-7xl mx-auto">
+            <NumberStat value={50} label="Projects Delivered" />
+            <NumberStat value={10} label="Happy Clients" />
+            <NumberStat value={2} label="Years of Excellence" />
+          </div>
+        </div>
+      </section>
+
+      {/*Services*/}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-8"
+          >
+            <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
+              {/* {text.home.servicesTitle} */}
+              Our <span className='text-blue-600'>Next Gen</span> Services
+            </h2>
+            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+              {text.home.servicesSubtitle}
+            </p>
+          </motion.div>
+          <div className='mt-6 flex flex-col items-center gap-6'>
+            <h2 className="text-center text-lg font-bold text-gray-800 max-w-2xl mx-auto py-8">
+              {text.home.servicesHook}
+            </h2>
+          </div>
+          <div className="flex overflow-visible overflow-x-scroll gap-6 snap-x snap-mandatory scrollbar-hide py-12 sm:p-6 md:grid md:grid-cols-2 lg:grid-cols-4 md:overflow-visible max-w-7xl ml-6 mr-0 sm:mx-auto">
+          {text.services.servicesList
+            .filter(service => service.isFeatured)
+            .map((service: { title: string; description: string; icon: string }, index) => (
+              <motion.div
+                key={service.title}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="snap-start shrink-0 w-[80%] sm:w-[60%] md:w-auto bg-white rounded-xl border-2 border-gray-100/80 shadow-sm  hover:shadow-2xl transition-all duration-300 overflow-hidden group"
+              >            
+                <div className="p-8">
+                  <div className="mb-6 text-center">
+                    <div className="inline-block p-4 w-fit rounded-full bg-blue-50 group-hover:bg-blue-100 transition-colors duration-300">
+                      <FontAwesomeIcon
+                        icon={iconMapping[service.icon] || faCode} // Added fallback icon
+                        className="w-[36px] h=[36px] text-blue-600 text-4xl transform group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 text-center">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 text-center leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+          <div className='mt-6 flex flex-col items-center gap-6'>
+            <p className="text-center text-lg text-gray-400 max-w-2xl mx-auto">
+              {text.home.servicesClosingText}
+            </p>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.6 }}
+              >
+              <Link
+                to="/portfolio"
+                className="w-44 inline-flex justify-center items-center bg-blue-600 text-white py-2 px-4 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                {text.home.heroButton2}
+                <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
 
 
       {/* Hero Section with Two-Color Title and Typing Effect */}
@@ -267,70 +386,27 @@ const Home: React.FC = () => {
         </div>
       </section> */}
 
-      {/* Count of Projects Delivered with Increment Animation */}
-      <section className="py-40 bg-white">
-        <div className="container mx-auto px-6 text-center">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-4xl font-extrabold text-gray-900 mb-12"
-          >
-            <span className='text-blue-600'>AI-Driven</span> Growth, Proven by Numbers
-          </motion.h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-12 sm:gap-y-0 max-w-7xl mx-auto">
-            <NumberStat value={50} label="Projects Delivered" />
-            <NumberStat value={10} label="Happy Clients" />
-            <NumberStat value={2} label="Years of Excellence" />
-          </div>
-        </div>
-      </section>
-
       {/* What Our Clients Say (Testimonials) with Fixed Card Size */}
-      <section className="py-20 bg-gray-100">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-2"
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              {text.home.testimonialsTitle}
+            <h2 className="text-4xl font-bold text-gray-800">
+              {/* {text.home.testimonialsTitle} */}
+              What <span className='text-blue-600'>Our Clients</span> Say
             </h2>
           </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {text.home.testimonials.map((testimonial, index) => (
-              <motion.div
-                key={testimonial.author}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
-                whileHover={{
-                  y: -10,
-                  boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-                  transition: { duration: 0.2 },
-                }}
-                className="h-full"
-              >
-                <div className="h-full">
-                  <Testimonial
-                    quote={testimonial.quote}
-                    author={testimonial.author}
-                    company={testimonial.company}
-                  />
-                </div>
-              </motion.div>
-            ))}
-          </div>
+          <TestimonialCarousel testimonials={text.home.testimonials} />
         </div>
       </section>
 
       {/* Our Services with Floating Cards - IMPROVED SECTION */}
-            <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -340,7 +416,7 @@ const Home: React.FC = () => {
             className="text-center mb-12"
           >
             <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-              {/* {text.home.servicesTitle} */}
+              {text.home.servicesTitle}
               Our <span className='text-blue-600'>Next Gen</span> Services
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -399,12 +475,13 @@ const Home: React.FC = () => {
             })}
           </div>
         </div>
-      </section>
+      </section> */}
+      
       {/* Team Section - Integrated directly with TeamAvatars component */}
-      <TeamAvatars teamMembers={text.about.teamMembers} />
+      {/* <TeamAvatars teamMembers={text.about.teamMembers} /> */}
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600">
+      <section className="mt-10 py-20 bg-blue-600">
         <div className="container mx-auto px-6 text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -436,7 +513,7 @@ const Home: React.FC = () => {
                       >
               <Link
                 to="/contact"
-                className="inline-flex justify-center items-center bg-white text-blue-600 py-2 px-4 rounded-full text-sm font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex justify-center items-center bg-gray-50 text-blue-600 py-2 px-4 rounded-full text-sm font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
                   Start Your Journey
                 <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
