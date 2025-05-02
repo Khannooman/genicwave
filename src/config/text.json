@@ -86,7 +86,8 @@
     ]
   },
   "about": {
-    "heroTitle": "About GenicWave",
+    "heroSemiTitle": "About ",
+    "heroTitle": "GenicWave",
     "heroSubtitle": "Transforming businesses with AI and cutting-edge technology since 2022.",
     "imageUrl": "/images/hero.jpg",
     "AboutTitle": "Who We Are",
@@ -135,6 +136,13 @@
         "bio": "Cloud enthusiast with a focus on automation and efficiency. \n\nBringing DevOps practices to life.",
         "icon": "fa-solid fa-laptop-code",
         "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/soheb.jpg"
+      },
+      {
+        "name": "Aiman Kulay",
+        "role": "ML Engineer",
+        "bio": "A skilled Machine Learning Engineer with a passion for AI. \n\nTransforming data into actionable insights.",
+        "icon": "fa-solid fa-laptop-code",
+        "image": "/"
       }
     ]
   },

@@ -30,17 +30,18 @@ const About: React.FC = () => {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary to-primary-dark py-32 overflow-hidden">
+      <section className="relative bg-white py-20 overflow-hidden">
+        {/* bg-gradient-to-r from-primary to-primary-dark */}
         {/* Background Image with fallback */}
-        <div
+        {/* <div
           className="absolute inset-0 bg-cover bg-center opacity-70"
           style={{
             backgroundImage: `url('${heroImageUrl}')`,
           }}
-        />
+        /> */}
         
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40 backdrop-blur-sm" />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40 backdrop-blur-sm" /> */}
         
         {/* Content */}
         <div className="container mx-auto px-6 text-center relative z-10">
@@ -48,32 +49,33 @@ const About: React.FC = () => {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeOut' }}
-            className="text-5xl md:text-6xl font-extrabold text-white mb-6 tracking-tight"
+            className="text-5xl md:text-6xl font-extrabold text-blue-600 mb-6 tracking-tight"
           >
-            {text.about.heroTitle || 'About GenicWave'}
+            <span className="text-gray-800">{text.about.heroSemiTitle || 'About '}</span>
+            {text.about.heroTitle || 'GenicWave'}
           </motion.h1>
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed"
           >
             {text.about.heroSubtitle || 'Transforming businesses through cutting-edge AI solutions'}
-          </motion.p>
-          <motion.a
+          </motion.p> */}
+          {/* <motion.a
             href="#about"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-8 inline-block bg-white text-primary font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition-all"
+            className="mt-8 inline-block bg-blue-600 text-white font-semibold px-8 py-2 rounded-full shadow-lg hover:shadow-xl hover:bg-blue-700 transition-all"
           >
             Discover More
-          </motion.a>
+          </motion.a> */}
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-white">
+      <section id="about" className="pt-4 pb-12 bg-white">
         <div className="container mx-auto px-6">
           <motion.div
             variants={staggerContainer}
@@ -83,11 +85,11 @@ const About: React.FC = () => {
           >
             <SectionHeader
               title={text.about.AboutTitle || "Who We Are"}
-              subtitle={text.about.AboutSubtitle || "GenicWave, founded in 2022, is a dynamic digital transformation and AI company empowering industries to revolutionize their businesses through cutting-edge technology."}
+              subtitle={text.about.AboutSubtitle || "Learn more about our journey and values."}
             />
             <motion.p
               variants={fadeInUp}
-              className="text-lg text-gray-600 max-w-4xl mx-auto mt-6 leading-relaxed"
+              className="text-lg text-center text-gray-600 max-w-4xl mx-auto mt-6 leading-relaxed"
             >
               {text.about.AboutText || "With a proven track record of transforming over 10 businesses, GenicWave drives innovation and delivers impactful solutions for lasting success."}
             </motion.p>
@@ -128,7 +130,7 @@ const About: React.FC = () => {
             />
             <motion.p
               variants={fadeInUp}
-              className="text-lg text-gray-600 mt-4"
+              className="text-lg text-center text-gray-600 mt-4"
             >
               {"We are committed to empowering businesses with AI-driven solutions that streamline operations and unlock new opportunities."}
             </motion.p>
@@ -169,7 +171,7 @@ const About: React.FC = () => {
             />
             <motion.p
               variants={fadeInUp}
-              className="text-lg text-gray-600 mt-4"
+              className="text-lg text-center text-gray-600 mt-4"
             >
               {"Our vision is to pioneer a future where technology transforms industries, creating endless possibilities for growth and innovation."}
             </motion.p>
