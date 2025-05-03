@@ -46,7 +46,7 @@ const Blog: React.FC = () => {
                 title={post.title}
                 excerpt={post.excerpt}
                 date={post.date}
-                slug={post.slug}
+                slug={post.githubLink}
               />
             ))}
           </div>

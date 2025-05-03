@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import routes from './routes';
+import { Toaster } from 'react-hot-toast';
 
 const App: React.FC = () => {
   return (
@@ -25,6 +26,17 @@ const App: React.FC = () => {
       </main>
       <Footer />
     </div>
+    <Toaster
+      position="top-center"
+      reverseOrder={false}
+      toastOptions={{
+        className: '',
+        style: {
+          background: '#ffffff',
+          color: '#333333',
+        },
+      }}
+    />
   </div>
   );
 };

@@ -222,45 +222,45 @@
     "projectsSubtitle": "Explore our latest work and achievements",
     "projects": [
       {
-        "title": "E-Commerce Platform",
-        "description": "A scalable online store with AI-powered recommendations and seamless payment integration.",
+        "title": "Survey Creation Platform (PicksieAI)",
+        "description": "A next-gen, scalable survey platform powered by AI effortlessly create surveys, collect responses, and automatically analyze results to truly understand your audience.",
         "icon": "fa-solid fa-shopping-cart",
-        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/project.jpg",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/PicksiAI-2.png",
         "githubRepo": "https://github.com/khursheed33/ecommerce-platform"
       },
       {
-        "title": "Healthcare App",
-        "description": "Telemedicine platform with real-time consultations and secure patient records.",
+        "title": "Natural Language Data Analysis (NLDA)",
+        "description": "A powerful platform that connects to popular databases like PostgreSQL, MS SQL, and Snowflake etc. enabling anyone to perform data analysis using natural language. Get instant database responses with intelligent visualizations, no coding required.",
         "icon": "fa-solid fa-heartbeat",
-        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/project.jpg",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/NLDA-2.png",
         "githubRepo": "https://github.com/khursheed33/healthcare-app"
       },
       {
-        "title": "FinTech Dashboard",
-        "description": "Real-time financial analytics with predictive modeling and interactive visualizations.",
+        "title": "Application Tracking System (ATS)",
+        "description": "An intelligent Applicant Tracking System (ATS) that empowers HR teams to identify the best candidates within seconds streamlining recruitment with AI-driven precision and speed.",
         "icon": "fa-solid fa-chart-bar",
-        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/project.jpg",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/ATS.jpg",
         "githubRepo": "https://github.com/khursheed33/fintech-dashboard"
       },
       {
-        "title": "Smart City Platform",
-        "description": "IoT-based urban management system for efficient city operations.",
+        "title": "MyMuster (Institute Management App ERP)",
+        "description": "Developed an application to digitize school and college operations streamlining daily tasks, roles, and management for Admins, Faculty, and Students with robust access control, significantly reducing manual effort.",
         "icon": "fa-solid fa-globe",
-        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/project.jpg",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/ERP-2.png",
         "githubRepo": "https://github.com/khursheed33/smart-city"
       },
       {
-        "title": "AI Assistant",
-        "description": "Natural language processing bot for customer service automation.",
+        "title": "Genset Canopy (DesignMatix)",
+        "description": "Developed a SolidWorks-based tool that generates 3D models from user inputs, allowing users to import data from Excel sheets and export models in TXT, PDF, and Excel formats.",
         "icon": "fa-solid fa-robot",
-        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/project.jpg",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/solidwork.png",
         "githubRepo": "https://github.com/khursheed33/ai-assistant"
       },
       {
-        "title": "Fitness Tracker",
-        "description": "Cross-platform mobile app for health and workout tracking.",
+        "title": "Live Vehicle Tracking",
+        "description": "Developed a vehicle tracking app for admins and drivers, empowering admins to monitor drivers' live locations in real-time on Google Maps, ensuring efficient fleet management",
         "icon": "fa-solid fa-mobile-alt",
-        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/project.jpg",
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/projects/Vehicle.png",
         "githubRepo": "https://github.com/khursheed33/fitness-tracker"
       }
     ]
@@ -276,22 +276,22 @@
     "postsSubtitle": "Stay informed with our latest articles.",
     "posts": [
       {
-        "title": "The Future of Cloud Computing",
-        "excerpt": "Explore how cloud technology is shaping the next decade.",
-        "date": "April 5, 2025",
-        "slug": "future-of-cloud-computing",
-        "author": "Alice Johnson",
+        "title": "How Large Language Models Work",
+        "excerpt": "A deep dive into tokenization, attention mechanisms, pretraining, fine-tuning, and alignment",
+        "date": "May 3, 2025",
+        "slug": "Future of AI",
+        "author": "Nooman Khan",
         "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/blog/cloud-future.jpg",
-        "githubLink": "https://github.com/khursheed33/blogs/future-of-cloud-computing.md"
+        "githubLink": "https://khannooman.github.io/genicwaveblog.github.io/llm.html"
       },
       {
-        "title": "Top 5 Cybersecurity Trends",
-        "excerpt": "Stay ahead of threats with these emerging trends.",
-        "date": "March 28, 2025",
-        "slug": "cybersecurity-trends",
+        "title": "The Evolution of Retrieval-Augmented Generation",
+        "excerpt": "From basic RAG to advanced methodologies like Corrective, Agentic, and Graph RAG.",
+        "date": "May 2, 2025",
+        "slug": "Retrieval-Augmented Generation",
         "author": "Bob Carter",
         "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/blog/cyber-trends.jpg",
-        "githubLink": "https://github.com/khursheed33/blogs/cybersecurity-trends.md"
+        "githubLink": "https://khannooman.github.io/genicwaveblog.github.io/rag.html"
       }
     ]
   },
