@@ -30,10 +30,10 @@
     "companyName": "GenicWave",
     "tagline": "Innovate. Transform. Succeed.",
     "socialLinks": [
-      { "name": "Facebook", "url": "https://facebook.com/genicwave", "icon": "fa-brands fa-facebook" },
+      { "name": "Facebook", "url": "https://www.facebook.com/profile.php?id=61576158921106", "icon": "fa-brands fa-facebook" },
       { "name": "Twitter", "url": "https://twitter.com/genicwave", "icon": "fa-brands fa-twitter" },
       { "name": "Instagram", "url": "https://instagram.com/genicwave", "icon": "fa-brands fa-instagram" },
-      { "name": "LinkedIn", "url": "https://linkedin.com/company/genicwave", "icon": "fa-brands fa-linkedin" },
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/company/genicwave/", "icon": "fa-brands fa-linkedin" },
       { "name": "YouTube", "url": "https://youtube.com/genicwave", "icon": "fa-brands fa-youtube" },
       { "name": "Snapchat", "url": "https://snapchat.com/add/genicwave", "icon": "fa-brands fa-snapchat" },
       { "name": "Slack", "url": "https://genicwave.slack.com", "icon": "fa-brands fa-slack" }
@@ -104,45 +104,51 @@
     "teamMembers": [
       {
         "name": "Khursheed Gaddi",
-        "role": "CEO",
+        "role": "Full Stack & AI Architech",
         "bio": "Visionary leader with over 4 years in tech innovation.",
         "icon": "fa-solid fa-user-tie",
-        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/khursheed.jpg"
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/khursheed.jpg",
+        "linkedin": "khursheed33"
       },
       {
         "name": "Nooman Khan",
-        "role": "CTO",
+        "role": "Data Scientist & ML Engineer",
         "bio": "Data Scinetist & ML Engineer. \n\nBuildin Enterprise AI and Data Solutions",
         "icon": "fa-solid fa-laptop-code",
-        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/Nooman.jpg"
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/Nooman.jpg",
+        "linkedin": "nooman-khan-25548a1b5"
       },
       {
         "name": "Vaid Mansuri",
         "role": "Senior Developer",
         "bio": ".NET Expert with a knack for problem-solving. \n\nPassionate about coding and technology.",
         "icon": "fa-solid fa-laptop-code",
-        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/vahid.jpg"
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/vahid.jpg",
+        "linkedin": "khursheed33"
       },
       {
         "name": "Kamal Joshi",
         "role": "Full Stack & AI Developer",
         "bio": "Full Stack Developer with a focus on AI solutions. \n\nBringing ideas to life through technology.",
         "icon": "fa-solid fa-laptop-code",
-        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/kamal.jpg"
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/kamal.jpg",
+        "linkedin": "kamal-joshi-3436b0196"
       },
       {
         "name": "Soheb Shaikh",
         "role": "DevOps Engineer",
         "bio": "Cloud enthusiast with a focus on automation and efficiency. \n\nBringing DevOps practices to life.",
         "icon": "fa-solid fa-laptop-code",
-        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/soheb.jpg"
+        "image": "https://raw.githubusercontent.com/khursheed33/disclaimers/main/genicwave/team/soheb.jpg",
+        "linkedin": "soheb-shaikh-aa6954209"
       },
       {
         "name": "Aiman Kulay",
         "role": "ML Engineer",
         "bio": "A skilled Machine Learning Engineer with a passion for AI. \n\nTransforming data into actionable insights.",
         "icon": "fa-solid fa-laptop-code",
-        "image": "/"
+        "image": "/",
+        "linkedin": "aimankulay"
       }
     ]
   },

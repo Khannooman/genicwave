@@ -75,24 +75,18 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-xl font-semibold mb-6">Follow Us</h4>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors text-2xl">
-                <FontAwesomeIcon icon={faFacebook} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors text-2xl">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors text-2xl">
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors text-2xl">
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors text-2xl">
-                <FontAwesomeIcon icon={faYoutube} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors text-2xl">
-                <FontAwesomeIcon icon={faSlack} />
-              </a>
+              {text.footer.socialLinks.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-blue-400 transition-colors text-2xl"
+                  aria-label={`Follow us on ${social.name}`}
+                >
+                  <FontAwesomeIcon icon={iconMapping[social.icon]} />
+                </a>
+              ))}
             </div>
           </div>
         </div>
