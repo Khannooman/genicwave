@@ -70,10 +70,10 @@ const TeamAvatars: React.FC<TeamAvatarsProps> = ({ teamMembers }) => {
                   <h3 className="text-lg font-semibold text-gray-900">{member.name}</h3>
                   <p className="text-sm text-gray-600">{member.role}</p>
                   <div className="mt-2 flex justify-center">
-                    <div className="bg-blue-100 p-2 rounded-full">
+                    <div className="bg-blue-600 p-2 rounded-full">
                       <FontAwesomeIcon
                         icon={member.icon as IconProp}
-                        className="text-blue-600 text-sm"
+                        className="text-white text-sm"
                       />
                     </div>
                   </div>

@@ -121,12 +121,12 @@ const Home: React.FC = () => {
   const items = [
     { label: "Artificial Intelligence", img: "images/ai.png", delay: 0.1 },
     { label: "Machine Learning", img: "images/ml.png", delay: 0.2 },
-    { label: "Custom Neural Training", img: "images/nn.png", delay: 0.4 },
-    { label: "Smart ChatBots", img: "images/genai.png", delay: 0.5 },
-    { label: "RAG System", img: "images/rag.png", delay: 0.7 },
-    { label: "Web Development", img: "images/web.png", delay: 0.8 },
-    { label: "App Development", img: "images/app.png", delay: 1.0 },
-    { label: "Business Analytics", img: "images/da.png", delay: 1.1 },
+    { label: "Custom Neural Training", img: "images/nn.png", delay: 0.3 },
+    { label: "Smart ChatBots", img: "images/genai.png", delay: 0.4 },
+    { label: "RAG System", img: "images/rag.png", delay: 0.5 },
+    { label: "Web Development", img: "images/web.png", delay: 0.6 },
+    { label: "App Development", img: "images/app.png", delay: 0.7 },
+    { label: "Business Analytics", img: "images/da.png", delay: 0.8 },
   ];
 
   const tooltipVariants = {
@@ -205,7 +205,7 @@ const Home: React.FC = () => {
         </div>
 
         
-        <div className="grid grid-rows-2 grid-cols-4 sm:grid-rows-1 sm:grid-cols-8 max-w-6xl sm:mx-16 lg:mx-48 mt-8 md:mt-10 items-center justify-items-center">
+        <div className="grid grid-rows-2 grid-cols-4 sm:grid-rows-1 sm:grid-cols-8 max-w-6xl sm:mx-16 lg:mx-36 mt-8 md:mt-10 items-center justify-items-center">
           {items.map((item, index) => (
             <div
               key={index}
@@ -220,7 +220,7 @@ const Home: React.FC = () => {
                 animate={hoveredIndex === index ? "hover" : "initial"}
                 className="flex justify-center items-center -translate-y-2 z-20 bg-gray-800 rounded-full px-2 sm:px-4 py-1 sm:py-2 pointer-events-none"
               >
-                <p className="text-white text-[10px] sm:text-xs font-bold whitespace-nowrap text-center">
+                <p className="text-white text-[10px] sm:text-xs font-medium tracking-wide whitespace-nowrap text-center">
                   {item.label}
                 </p>
               </motion.div>

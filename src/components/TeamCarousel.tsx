@@ -60,42 +60,12 @@ const TeamCarousel: React.FC<TeamCarouselProps> = ({ teamMembers }) => {
   );
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto py-16">
+    <div className="relative w-full max-w-7xl mx-auto pb-10">
 
       <div className="relative px-4">
-        {/* Carousel Controls */}
-        <div className="flex justify-between items-center mb-6">
-          <div className="flex items-center gap-2">
-            <button
-              onClick={prev}
-              disabled={currentIndex === 0}
-              className={`p-2 rounded-full ${
-                currentIndex === 0 
-                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
-                  : 'bg-blue-600 text-white hover:bg-blue-700'
-              } transition-all duration-300`}
-              aria-label="Previous team members"
-            >
-              <FontAwesomeIcon icon={faChevronLeft as IconProp} />
-            </button>
-            
-            <button
-              onClick={next}
-              disabled={currentIndex >= maxIndex}
-              className={`p-2 rounded-full ${
-                currentIndex >= maxIndex 
-                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
-                  : 'bg-blue-600 text-white hover:bg-blue-700'
-              } transition-all duration-300`}
-              aria-label="Next team members"
-            >
-              <FontAwesomeIcon icon={faChevronRight as IconProp} />
-            </button>
-          </div>
-        </div>
         
         {/* Cards Container */}
-        <div className="relative overflow-hidden py-4">
+        <div className="relative overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div 
               key={currentIndex}
@@ -121,7 +91,7 @@ const TeamCarousel: React.FC<TeamCarouselProps> = ({ teamMembers }) => {
         
         {/* Pagination Dots */}
         {totalSlides > 1 && (
-          <div className="flex justify-center mt-8 gap-2">
+          <div className="hidden justify-center mt-8 gap-2">
             {Array.from({ length: totalSlides }).map((_, index) => (
               <button
                 key={index}
@@ -136,6 +106,39 @@ const TeamCarousel: React.FC<TeamCarouselProps> = ({ teamMembers }) => {
             ))}
           </div>
         )}
+
+        {/* Carousel Controls */}
+        <div className="flex justify-center items-center mt-6">
+          <div className="flex items-center gap-2">
+            <button
+              onClick={prev}
+              disabled={currentIndex === 0}
+              className={`py-2 px-4 rounded-full ${
+                currentIndex === 0 
+                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
+                  : 'bg-blue-600 text-white hover:bg-blue-700'
+              } transition-all duration-300`}
+              aria-label="Previous team members"
+            >
+              <FontAwesomeIcon icon={faChevronLeft as IconProp} />
+            </button>
+            
+            <button
+              onClick={next}
+              disabled={currentIndex >= maxIndex}
+              className={`py-2 px-4 rounded-full ${
+                currentIndex >= maxIndex 
+                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
+                  : 'bg-blue-600 text-white hover:bg-blue-700'
+              } transition-all duration-300`}
+              aria-label="Next team members"
+            >
+              <FontAwesomeIcon icon={faChevronRight as IconProp} />
+            </button>
+          </div>
+        </div>
+
+
       </div>
     </div>
   );
