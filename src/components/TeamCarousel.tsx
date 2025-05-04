@@ -69,7 +69,7 @@ const TeamCarousel: React.FC<TeamCarouselProps> = ({ teamMembers }) => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.5 }}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 py-4 mx-4"
             >
               {visibleMembers.map((member, index) => (
                 <motion.div

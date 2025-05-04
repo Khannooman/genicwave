@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import routes from './routes';
 import { Toaster } from 'react-hot-toast';
+import ScrollToTop from './components/ScrollToTop';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
     </head>
     <div className="min-h-screen bg-white flex flex-col">
       <Navbar />
+      <ScrollToTop />
       <main className="flex-grow">
         <Routes>
           {routes.map((route) => (

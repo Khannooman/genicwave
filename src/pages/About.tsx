@@ -30,7 +30,7 @@ const About: React.FC = () => {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-white py-20 overflow-hidden">
+      <section className="relative bg-gray-50 py-20 overflow-hidden">
         {/* bg-gradient-to-r from-primary to-primary-dark */}
         {/* Background Image with fallback */}
         {/* <div
@@ -75,7 +75,7 @@ const About: React.FC = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="pt-4 pb-12 bg-white">
+      <section id="about" className="pt-4 pb-12 bg-gray-50">
         <div className="container mx-auto px-6">
           <motion.div
             variants={staggerContainer}
@@ -139,7 +139,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Vision Section */}
-      <section className="py-24 bg-white relative">
+      <section className="py-24 bg-gray-50 relative">
         <div className="container mx-auto px-6 flex flex-col md:flex-row-reverse items-center">
           <motion.div
             className="md:w-1/2 mb-8 md:mb-0"

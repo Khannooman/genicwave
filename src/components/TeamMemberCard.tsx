@@ -41,16 +41,16 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
           src={member.image}
           alt={member.name}
           className="w-full h-full object-cover"
-          animate={{
-            scale: isHovered ? 1.1 : 1
-          }}
+          // animate={{
+          //   scale: isHovered ? 1.1 : 1
+          // }}
           transition={{ duration: 0.3 }}
           onError={(e) => {
             (e.target as HTMLImageElement).src = 'https://via.placeholder.com/400x400?text=Team+Member';
           }}
         />
         <motion.div
-          className="absolute inset-0 bg-blue-600 bg-opacity-70"
+          className="absolute inset-0 bg-blue-600 bg-opacity-40"
           initial={{ opacity: 0 }}
           animate={{ opacity: isHovered ? 1 : 0 }}
           transition={{ duration: 0.3 }}
@@ -58,7 +58,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
       </div>
 
       {/* Content - Flex grow to fill remaining space */}
-      <div className="p-6 flex flex-col flex-grow">
+      <div className="p-4 flex flex-col flex-grow">
         <div className="flex-grow">
           <h3 className="text-xl font-bold text-gray-800 mb-2">{member.name}</h3>
           <p className="text-blue-600 mb-4">{member.role}</p>
@@ -72,7 +72,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-blue-600 hover:text-blue-700 transition-colors mt-4"
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.95 }}
           >
             <FontAwesomeIcon 
