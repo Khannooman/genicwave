@@ -72,7 +72,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-blue-600 hover:text-blue-700 transition-colors mt-4"
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.02 }} 
             whileTap={{ scale: 0.95 }}
           >
             <FontAwesomeIcon 

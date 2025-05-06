@@ -330,7 +330,7 @@ const Home: React.FC = () => {
               transition={{ duration: 1, delay: 0.6 }}
               >
               <Link
-                to="/portfolio"
+                to="/services"
                 className="w-44 inline-flex justify-center items-center bg-blue-600 text-white py-2 px-4 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 {text.home.heroButton2}

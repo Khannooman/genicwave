@@ -14,7 +14,7 @@ const App: React.FC = () => {
     </head>
     <div className="min-h-screen bg-white flex flex-col">
       <Navbar />
-      <ScrollToTop />
+      <ScrollToTop/>
       <main className="flex-grow">
         <Routes>
           {routes.map((route) => (

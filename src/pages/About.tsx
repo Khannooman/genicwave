@@ -24,13 +24,13 @@ const About: React.FC = () => {
 
   // Fallback images in case the URLs aren't available
   const heroImageUrl = text.about.imageUrl || '/images/hero-background.jpg';
-  const missionImageUrl = text.about.missionImage || '/images/mission.jpg';
+  const missionImageUrl = text.about.missionImage || '/images/about1.jpeg';
   const visionImageUrl = text.about.vissionImage || '/images/vision.jpg';
 
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gray-50 py-20 overflow-hidden">
+      <section className="relative bg-gray-50 py-20 overflow-hidden ">
         {/* bg-gradient-to-r from-primary to-primary-dark */}
         {/* Background Image with fallback */}
         {/* <div
@@ -75,8 +75,8 @@ const About: React.FC = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="pt-4 pb-12 bg-gray-50">
-        <div className="container mx-auto px-6">
+      <section id="about" className="pt-4 pb-10 md:pb-12 bg-gray-50">
+        <div className="container mx-auto px-10">
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -98,22 +98,23 @@ const About: React.FC = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="py-24 bg-gray-50 relative">
-        <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
+      <section className="py-10 sm:py-20 bg-gray-50 relative">
+        <div className="container mx-auto px-10 flex flex-col-reverse md:flex-row items-center">
           <motion.div
-            className="md:w-1/2 mb-8 md:mb-0"
+            className="md:w-1/2 mb-8 md:mb-0 my-10"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
           >
             <img
-              src={missionImageUrl}
+              // src={missionImageUrl}
+              src="/images/about1.jpeg"
               alt="Our Mission"
-              className="rounded-lg shadow-xl w-full object-cover h-96"
+              className="rounded-lg shadow-xl w-full h-[500px] object-cover md:object-center lg:object-center xl:object-[0%_20%]"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
-                target.src = '/images/placeholder.jpg';
+                target.src = '/images/about1.jpeg';
               }}
             />
           </motion.div>
@@ -139,19 +140,20 @@ const About: React.FC = () => {
       </section>
 
       {/* Vision Section */}
-      <section className="py-24 bg-gray-50 relative">
-        <div className="container mx-auto px-6 flex flex-col md:flex-row-reverse items-center">
+      <section className="py-10 sm:py-20 bg-gray-50 relative">
+        <div className="container mx-auto px-10 flex flex-col-reverse md:flex-row-reverse items-center">
           <motion.div
-            className="md:w-1/2 mb-8 md:mb-0"
+            className="md:w-1/2 mb-8 md:mb-0 my-10"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
           >
             <img
-              src={visionImageUrl}
+              // src={visionImageUrl}
+              src="/images/about3.jpeg"
               alt="Our Vision"
-              className="rounded-lg shadow-xl w-full object-cover h-96"
+              className="rounded-lg shadow-xl w-full h-[550px] object-cover md:object-center lg:object-center xl:object-[0%_20%]"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.src = '/images/placeholder.jpg';
@@ -180,7 +182,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-10 sm:py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <motion.div
             variants={staggerContainer}

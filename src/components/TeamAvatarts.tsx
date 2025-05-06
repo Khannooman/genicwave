@@ -73,7 +73,7 @@ const TeamAvatars: React.FC<TeamAvatarsProps> = ({ teamMembers }) => {
                     <div className="bg-blue-600 p-2 rounded-full">
                       <FontAwesomeIcon
                         icon={member.icon as IconProp}
-                        className="text-white text-sm"
+                        className="text-white text-sm "
                       />
                     </div>
                   </div>
