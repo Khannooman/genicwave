@@ -203,8 +203,17 @@ const Home: React.FC = () => {
           </div>
           
         </div>
-
-        
+          <div className='flex flex-col justify-center items-center my-0 md:hidden'>
+            <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="text-sm md:text-lg text-gray-400 -mb-2 max-w-3xl mx-auto"
+            >
+            {/* Try tapping Icons—see what happens! */}
+            Tap the icons to see what happens!
+            </motion.p>
+          </div>
         <div className="grid grid-rows-2 grid-cols-4 sm:grid-rows-1 sm:grid-cols-8 max-w-6xl sm:mx-16 lg:mx-36 mt-8 md:mt-10 items-center justify-items-center">
           {items.map((item, index) => (
             <div

@@ -85,10 +85,10 @@ const Portfolio: React.FC = () => {
                   />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300" />
                   <div className="absolute top-4 left-4">
-                    <div className="bg-white/90 p-3 rounded-full">
+                    <div className="bg-white/90 p-3 rounded-full flex justify-center items-center">
                       <FontAwesomeIcon
                         icon={iconMapping[project.icon] || faGlobe}
-                        className="text-blue-600 text-xl"
+                        className="text-blue-600 text-xl w-[24px] h-[24px]"
                       />
                     </div>
                   </div>
@@ -102,7 +102,7 @@ const Portfolio: React.FC = () => {
                   <p className="text-gray-600 mb-4">
                     {project.description}
                   </p>
-                  <a
+                  {/* <a
                     href={project.githubRepo}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -122,7 +122,7 @@ const Portfolio: React.FC = () => {
                         d="M17 8l4 4m0 0l-4 4m4-4H3"
                       />
                     </svg>
-                  </a>
+                  </a> */}
                 </div>
               </motion.div>
             ))}
